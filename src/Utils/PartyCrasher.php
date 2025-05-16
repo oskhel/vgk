@@ -1,32 +1,35 @@
 <?php
 
+require_once __DIR__ . '/DatabaseHandler.php';
+
 class PartyCrasher
 {
     private PDO $pdo;
+    private DatabaseHandler $dbHandler;
 
-    // Constructor to initialize the database connection
+
     public function __construct()
     {
-        $confPath = dirname(dirname(__DIR__)) . '/config/config.json';
-        if (!file_exists($confPath)) {
-            die("Configuration file not found: $confPath");
+        $configPath = dirname(dirname(__DIR__)) . '/config/config.json';
+        $this->dbHandler = new DatabaseHandler($configPath);
+    }
+
+    public function storeToDatabase(array $events): void
+    {
+        if (empty($events)) {
+            return;
         }
 
-        $config = json_decode(file_get_contents($confPath), true);
-        $dbConfig = $config['database'];
+        foreach ($events as $event) {
+            if (empty($event['id'])) {
+                continue;
+            }
 
-        $host = $dbConfig['host'];
-        $dbname = $dbConfig['dbname'];
-        $username = $dbConfig['username'];
-        $password = $dbConfig['password'];
-
-        try {
-            // Create a PDO instance for database connection
-            $this->pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
-            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (PDOException $e) {
-            // Handle database connection errors
-            die("Database connection error: " . $e->getMessage());
+            if ($this->dbHandler->checkEventExists($event['id'])) {
+                $this->dbHandler->updateEvent($event);
+            } else {
+                $this->dbHandler->insertEvent($event);
+            }
         }
     }
 
@@ -141,58 +144,6 @@ class PartyCrasher
         return $output;
     }
 
-    // Store parsed events into the database
-    public function storeToDatabase(array $events): void
-    {
-        if (empty($events)) {
-            return; // Exit if no events to store
-        }
-
-        // Prepare SQL statements for checking, inserting, and updating
-        $checkStmt = $this->pdo->prepare("SELECT COUNT(*) FROM royal_events WHERE id = :id");
-        $insertStmt = $this->pdo->prepare("
-            INSERT INTO royal_events (id, title, participant, location, date)
-            VALUES (:id, :title, :participant, :location, :date)
-        ");
-        $updateStmt = $this->pdo->prepare("
-            UPDATE royal_events
-            SET title = :title, participant = :participant, location = :location, date = :date
-            WHERE id = :id
-        ");
-
-        foreach ($events as $event) {
-            if (empty($event['id'])) {
-                continue; // Skip if ID is empty
-            }
-
-            // Check if the event already exists
-            $checkStmt->execute([':id' => $event['id']]);
-            $exists = $checkStmt->fetchColumn() > 0;
-
-            if ($exists) {
-                // Update existing event
-                $updateStmt->execute([
-                    ':id' => $event['id'],
-                    ':title' => $event['title'],
-                    ':participant' => $event['participant'],
-                    ':location' => $event['location'],
-                    ':date' => $event['date'] ?: null,
-                ]);
-            } else {
-                // Insert new event
-                $insertStmt->execute([
-                    ':id' => $event['id'],
-                    ':title' => $event['title'],
-                    ':participant' => $event['participant'],
-                    ':location' => $event['location'],
-                    ':date' => $event['date'] ?: null,
-                ]);
-            }
-        }
-
-        //echo "Data successfully stored in the database.\n";
-    }
-
     // Main method to run the scraper
     public function run(): void
     {
@@ -219,4 +170,3 @@ class PartyCrasher
         echo json_encode($all, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     }
 }
-
