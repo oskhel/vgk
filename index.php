@@ -183,10 +183,10 @@ foreach ($events as $event) {
             <p class="date"><?= htmlspecialchars($currentEvent['formatted_date']) ?></p>
         <?php endif; ?>
     <?php else: ?>
-        <h1>No Royal Events Today</h1>
-        <p class="no-event">Check back tomorrow for updates!</p>
+        <h1>Inget kungligt uppdrag idag</h1>
+        <p class="no-event"></p>
     <?php endif; ?>
-    <p style="position: absolute;bottom: 35px;font-size: 0.8em;font-weight: 400;color: #f8c471;">Skrolla ned för att se vad som kommer härnäst</p>
+    <p style="position: absolute;bottom: 40px;font-size: 0.8em;font-weight: 400;color: #f8c471;">Skrolla ned för att se vad som kommer härnäst</p>
 </div>
 
 <div class="calendar-container">
