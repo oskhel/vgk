@@ -1,0 +1,57 @@
+# Deny access to .htaccess itself
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Deny access to sensitive files
+<FilesMatch "\.(env|json|ini|log|sh|sql|bak|config|git|gitignore)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+
+# Disable directory listing
+Options -Indexes
+
+# Protect against XSS attacks
+Header set X-XSS-Protection "1; mode=block"
+
+# Protect against clickjacking
+Header always append X-Frame-Options SAMEORIGIN
+
+# Enable MIME type sniffing protection
+Header set X-Content-Type-Options nosniff
+
+# Enforce HTTPS
+RewriteEngine On
+# Redirect all HTTP requests to HTTPS
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Deny access to the .git directory
+RewriteRule ^\.git/ - [F,L]
+
+# Deny access to the `src` directory
+RewriteRule ^src/ - [F,L]
+
+# Deny access to the `config` directory
+RewriteRule ^config/ - [F,L]
+
+# Deny access to the `private` directory
+RewriteRule ^private/ - [F,L]
+
+# Deny access to the `logs` directory
+RewriteRule ^logs/ - [F,L]
+
+# Allow access to index.php
+<Files index.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# Allow access to public files only
+<FilesMatch "\.(php|html|css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot|otf|json|xml)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
