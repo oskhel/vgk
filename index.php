@@ -12,6 +12,25 @@ $currentDate = '2025-05-18';
 $currentEvent = null;
 $upcomingEvents = [];
 
+$monthMap = [
+    '01' => 'januari', '02' => 'februari', '03' => 'mars', '04' => 'april',
+    '05' => 'maj', '06' => 'juni', '07' => 'juli', '08' => 'augusti',
+    '09' => 'september', '10' => 'oktober', '11' => 'november', '12' => 'december',
+];
+
+// Format date month according to swedish months in $monthMap. Remove year and keep only month and day
+foreach ($events as &$event) {
+    if (isset($event['date'])) {
+        $dateParts = explode('-', $event['date']);
+
+        if (count($dateParts) === 3) {
+            $month = $monthMap[$dateParts[1]];
+            $day = str_pad($dateParts[2], 2, '0', STR_PAD_LEFT);
+            $event['formatted_date'] = "$day $month";
+        }
+    }
+}
+
 foreach ($events as $event) {
     if ($event['date'] === $currentDate) {
         $currentEvent = $event;
@@ -31,7 +50,7 @@ foreach ($events as $event) {
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: "source sans pro", sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f5f0;
@@ -54,6 +73,7 @@ foreach ($events as $event) {
             font-size: 4em;
             margin: 0;
             font-weight: 700;
+            padding-bottom: 0.3em;
         }
         .hero p {
             font-size: 1.5em;
@@ -64,6 +84,24 @@ foreach ($events as $event) {
             font-size: 2em;
             font-weight: 500;
             margin-top: 20px;
+        }
+        .hero .title {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero .participant {
+            font-size: 1.2em;
+            font-weight: 200;
+            margin: 1em;
+        }
+        .hero .location {
+            font-size: 1.2em;
+            font-weight: 400;
+            margin: 0;
+        }
+        .hero .date {
+            font-size: 1.2em;
+            font-weight: 400;
+            margin: 0;
         }
         .calendar-container {
             margin: 20px auto;
@@ -131,15 +169,15 @@ foreach ($events as $event) {
 <div class="hero" style="position: relative;">
     <?php if ($currentEvent): ?>
         <h1>Dagens kungliga uppdrag</h1>
-        <p><strong><?= htmlspecialchars($currentEvent['title']) ?></strong></p>
+        <p class="title"><strong><?= htmlspecialchars($currentEvent['title']) ?></strong></p>
         <?php if (!empty($currentEvent['participant'])): ?>
-            <p>Deltagare: <?= htmlspecialchars($currentEvent['participant']) ?></p>
+            <p class="participant"><?= htmlspecialchars($currentEvent['participant']) ?></p>
         <?php endif; ?>
         <?php if (!empty($currentEvent['location'])): ?>
-            <p>Plats: <?= htmlspecialchars($currentEvent['location']) ?></p>
+            <p class="location"><?= htmlspecialchars($currentEvent['location']) ?></p>
         <?php endif; ?>
-        <?php if (!empty($currentEvent['date'])): ?>
-            <p>Datum: <?= htmlspecialchars($currentEvent['date']) ?></p>
+        <?php if (!empty($currentEvent['formatted_date'])): ?>
+            <p class="date"><?= htmlspecialchars($currentEvent['formatted_date']) ?></p>
         <?php endif; ?>
     <?php else: ?>
         <h1>No Royal Events Today</h1>
