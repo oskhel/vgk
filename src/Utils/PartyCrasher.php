@@ -7,7 +7,12 @@ class PartyCrasher
     // Constructor to initialize the database connection
     public function __construct()
     {
-        $config = json_decode(file_get_contents(__DIR__ . '/config/config.json'), true);
+        $confPath = dirname(dirname(__DIR__)) . '/config/config.json';
+        if (!file_exists($confPath)) {
+            die("Configuration file not found: $confPath");
+        }
+
+        $config = json_decode(file_get_contents($confPath), true);
         $dbConfig = $config['database'];
 
         $host = $dbConfig['host'];
@@ -211,6 +216,3 @@ class PartyCrasher
     }
 }
 
-// Instantiate and run the PartyCrasher class
-$partyCrasher = new PartyCrasher();
-$partyCrasher->run();
