@@ -114,51 +114,57 @@ foreach ($events as $event) {
         .calendar-title {
             text-align: center;
             font-family: 'Playfair Display', serif;
-            font-size: 2em;
-            margin-bottom: 20px;
+            font-size: 2.5em;
+            margin-bottom: 30px;
             color: #002147;
         }
 
         .calendar-list {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 25px;
         }
 
         .calendar-item {
             padding: 20px;
             border: 2px solid #d4af37;
-            border-radius: 8px;
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /*border-radius: 12px;*/
+            background: linear-gradient(135deg, #fff, #f8f5f0);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .calendar-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
         }
 
         .calendar-date {
             font-weight: 700;
-            font-size: 1.2em;
+            font-size: 1.5em;
             color: #002147;
             margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
         }
 
-        .event {
-            background-color: #f8c471;
-            color: #002147;
-            padding: 10px;
-            border-radius: 5px;
+        .event-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #d4af37;
+            margin-bottom: 8px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .event-participant {
             font-size: 1em;
+            color: #333;
             margin-bottom: 5px;
-            transition: background-color 0.2s, color 0.2s;
         }
 
-        .event:hover {
-            background-color: #d4af37;
-            color: #fff;
+        .event-location {
+            font-size: 1em;
+            color: #555;
         }
     </style>
 </head>
@@ -188,16 +194,22 @@ foreach ($events as $event) {
     <div class="calendar-list">
         <?php
         foreach ($upcomingEvents as $event) {
-            $day = $event['date'];
-            $weekday = strftime('%A', strtotime($day)); // Get weekday in Swedish
-            $dayNumber = date('j', strtotime($day));
+//            $day = $event['date'];
+//            $weekday = strftime('%A', strtotime($day)); // Get weekday in Swedish
+//            $dayNumber = date('j', strtotime($day));
 
             echo '<div class="calendar-item">';
             echo '<div class="calendar-date">';
-            echo '<strong>' . ucfirst($weekday) . ' ' . $dayNumber . '</strong>';
+            echo '<strong>' . htmlspecialchars($event['formatted_date']) . '</strong>';
             echo '</div>';
 
-            echo '<div class="event">' . htmlspecialchars($event['title']) . '</div>';
+            echo '<div class="event-title">' . htmlspecialchars($event['title']) . '</div>';
+            if (!empty($event['participant'])) {
+                echo '<div class="event-participant">👑 ' . htmlspecialchars($event['participant']) . '</div>';
+            }
+            if (!empty($event['location'])) {
+                echo '<div class="event-location">📍 ' . htmlspecialchars($event['location']) . '</div>';
+            }
             echo '</div>';
         }
         ?>
