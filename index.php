@@ -103,11 +103,14 @@ foreach ($events as $event) {
             font-weight: 400;
             margin: 0;
         }
+
         .calendar-container {
             margin: 20px auto;
             width: 90%;
-            max-width: 1200px;
+            max-width: 800px;
+            font-family: 'Roboto', sans-serif;
         }
+
         .calendar-title {
             text-align: center;
             font-family: 'Playfair Display', serif;
@@ -115,53 +118,47 @@ foreach ($events as $event) {
             margin-bottom: 20px;
             color: #002147;
         }
-        .calendar {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 10px;
+
+        .calendar-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
-        .calendar-header {
-            font-weight: 700;
-            text-align: center;
-            padding: 10px;
-            background-color: #d4af37;
-            color: #fff;
-            border-radius: 5px;
-        }
-        .calendar-day {
-            background-color: #fff;
+
+        .calendar-item {
+            padding: 20px;
             border: 2px solid #d4af37;
-            border-radius: 5px;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        .calendar-day strong {
-            display: block;
+
+        .calendar-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .calendar-date {
+            font-weight: 700;
             font-size: 1.2em;
-            margin-bottom: 5px;
             color: #002147;
+            margin-bottom: 10px;
         }
+
         .event {
             background-color: #f8c471;
             color: #002147;
-            margin: 5px 0;
-            padding: 5px;
+            padding: 10px;
             border-radius: 5px;
-            font-size: 0.9em;
-            text-align: left;
+            font-size: 1em;
+            margin-bottom: 5px;
+            transition: background-color 0.2s, color 0.2s;
         }
+
         .event:hover {
             background-color: #d4af37;
             color: #fff;
-        }
-        @media (max-width: 768px) {
-            .calendar {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .calendar-header {
-                font-size: 0.9em;
-            }
         }
     </style>
 </head>
@@ -188,46 +185,24 @@ foreach ($events as $event) {
 
 <div class="calendar-container">
     <h2 class="calendar-title">Kommande kungliga uppdrag</h2>
-    <div class="calendar">
-        <div class="calendar-header">Måndag</div>
-        <div class="calendar-header">Tisday</div>
-        <div class="calendar-header">Onsdag</div>
-        <div class="calendar-header">Torsdag</div>
-        <div class="calendar-header">Fredag</div>
-        <div class="calendar-header">Lördag</div>
-        <div class="calendar-header">Söndag</div>
+    <div class="calendar-list">
         <?php
-        $startOfMonth = strtotime(date('Y-m-01'));
-        $endOfMonth = strtotime(date('Y-m-t'));
-        $currentDay = $startOfMonth;
+        foreach ($upcomingEvents as $event) {
+            $day = $event['date'];
+            $weekday = strftime('%A', strtotime($day)); // Get weekday in Swedish
+            $dayNumber = date('j', strtotime($day));
 
-        // Adjust day of the week to start on Monday
-        $dayOfWeek = (date('N', $startOfMonth) % 7); // 'N' gives 1 (Monday) to 7 (Sunday)
-
-        for ($i = 0; $i < $dayOfWeek; $i++) {
-            echo '<div class="calendar-day"></div>';
-        }
-
-        while ($currentDay <= $endOfMonth) {
-            $day = date('Y-m-d', $currentDay);
-            echo '<div class="calendar-day">';
-            echo '<strong>' . date('j', $currentDay) . '</strong>';
-            foreach ($upcomingEvents as $event) {
-                if ($event['date'] === $day) {
-                    echo '<div class="event">' . htmlspecialchars($event['title']) . '</div>';
-                }
-            }
+            echo '<div class="calendar-item">';
+            echo '<div class="calendar-date">';
+            echo '<strong>' . ucfirst($weekday) . ' ' . $dayNumber . '</strong>';
             echo '</div>';
 
-            $currentDay = strtotime('+1 day', $currentDay);
-        }
-
-        $remainingDays = (7 - date('N', $endOfMonth)) % 7;
-        for ($i = 0; $i < $remainingDays; $i++) {
-            echo '<div class="calendar-day"></div>';
+            echo '<div class="event">' . htmlspecialchars($event['title']) . '</div>';
+            echo '</div>';
         }
         ?>
     </div>
 </div>
+
 </body>
 </html>
