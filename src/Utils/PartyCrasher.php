@@ -161,6 +161,10 @@ class PartyCrasher
         ");
 
         foreach ($events as $event) {
+            if (empty($event['id'])) {
+                continue; // Skip if ID is empty
+            }
+
             // Check if the event already exists
             $checkStmt->execute([':id' => $event['id']]);
             $exists = $checkStmt->fetchColumn() > 0;
@@ -186,7 +190,7 @@ class PartyCrasher
             }
         }
 
-        echo "Data successfully stored in the database.\n";
+        //echo "Data successfully stored in the database.\n";
     }
 
     // Main method to run the scraper
