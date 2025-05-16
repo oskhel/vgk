@@ -7,10 +7,13 @@ class PartyCrasher
     // Constructor to initialize the database connection
     public function __construct()
     {
-        $host = '';
-        $dbname = '';
-        $username = '';
-        $password = '';
+        $config = json_decode(file_get_contents(__DIR__ . '/config/config.json'), true);
+        $dbConfig = $config['database'];
+
+        $host = $dbConfig['host'];
+        $dbname = $dbConfig['dbname'];
+        $username = $dbConfig['username'];
+        $password = $dbConfig['password'];
 
         try {
             // Create a PDO instance for database connection
