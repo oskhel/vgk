@@ -30,6 +30,7 @@ foreach ($events as &$event) {
         }
     }
 }
+unset($event);
 
 foreach ($events as $event) {
     if ($event['date'] === $currentDate) {
