@@ -4,19 +4,21 @@ require_once __DIR__ . '/DatabaseHandler.php';
 
 class PartyCrasher
 {
-    private PDO $pdo;
-    private DatabaseHandler $dbHandler;
+    private ?DatabaseHandler $dbHandler;
 
-
-    public function __construct()
+    public function __construct(bool $withDatabase = true)
     {
-        $configPath = dirname(dirname(__DIR__)) . '/config/config.json';
-        $this->dbHandler = new DatabaseHandler($configPath);
+        if ($withDatabase) {
+            $configPath = dirname(dirname(__DIR__)) . '/config/config.json';
+            $this->dbHandler = new DatabaseHandler($configPath);
+        } else {
+            $this->dbHandler = null;
+        }
     }
 
     public function storeToDatabase(array $events): void
     {
-        if (empty($events)) {
+        if (empty($events) || $this->dbHandler === null) {
             return;
         }
 
@@ -144,8 +146,8 @@ class PartyCrasher
         return $output;
     }
 
-    // Main method to run the scraper
-    public function run(): void
+    // Fetch and parse all events across pages without persisting
+    public function fetchAll(): array
     {
         $all = [];
         for ($page = 1; $page <= 5; $page++) {
@@ -153,19 +155,25 @@ class PartyCrasher
             $html = $this->fetchHtml($url);
 
             if (!$html) {
-                break; // Stop if no HTML is fetched
+                break;
             }
 
             $items = $this->parseOfficialPrograms($html);
             if (empty($items)) {
-                break; // Stop if no items are parsed
+                break;
             }
 
             $all = array_merge($all, $items);
         }
+        return $all;
+    }
+
+    // Main method to run the scraper (DB mode)
+    public function run(): void
+    {
+        $all = $this->fetchAll();
         $this->storeToDatabase($all);
 
-        // Output the data as JSON
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode($all, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     }
