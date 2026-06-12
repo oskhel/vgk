@@ -1,5 +1,40 @@
 [
     {
+        "id": "sv_572610d621969f6ea3cd2ed73",
+        "title": "Digital medverkan vid Utlandssvenskarnas parlament",
+        "participant": "Kronprinsessan",
+        "location": "",
+        "date": "2025-06-18"
+    },
+    {
+        "id": "sv_572610d621969f6ea3cd2ed83",
+        "title": "Närvaro vid invigning av koloniträdgårdar",
+        "participant": "Kungen",
+        "location": "Sollidens slott, Öland",
+        "date": "2025-06-30"
+    },
+    {
+        "id": "sv_5616cb849196139c0da411407",
+        "title": "Närvaro vid firandet av Öresundsbrons 25-årsjubileum",
+        "participant": "Kungen",
+        "location": "Lernacken och Pepparholm",
+        "date": "2025-07-01"
+    },
+    {
+        "id": "sv_572610d621969f6ea3cd2ed94",
+        "title": "Närvaro vid premiering av Årets ölänning",
+        "participant": "Kungen",
+        "location": "Sollidens slott, Öland",
+        "date": "2025-07-10"
+    },
+    {
+        "id": "sv_5616cb849196139c0da4136a5",
+        "title": "Närvaro vid högtidsgudstjänst med anledning av Visby domkyrkas 800-årsjubileum",
+        "participant": "Kronprinsessan",
+        "location": "Visby",
+        "date": "2025-07-27"
+    },
+    {
         "id": "sv_57ea42b7f19dd2803ee8aa21d",
         "title": "Firande av DD.MM. Konungen och Drottningens guldbröllop",
         "participant": "Kungen",
