@@ -108,7 +108,7 @@ class PartyCrasher
 
                     if (isset($monthMap[$month])) {
                         $monthNum = $monthMap[$month];
-                        $year = date('Y');
+                        $year = ($monthNum < (int)date('m')) ? date('Y') + 1 : date('Y');
                         $dateStr = "$year-$monthNum-" . str_pad($day, 2, '0', STR_PAD_LEFT);
                         $dt = DateTime::createFromFormat('Y-m-d', $dateStr);
 
