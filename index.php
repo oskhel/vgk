@@ -8,7 +8,7 @@ $stmt = $pdo->query("SELECT * FROM royal_events ORDER BY date ASC");
 $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $currentDate = date('Y-m-d');
-$currentDate = '2025-05-18';
+//$currentDate = '2025-05-18';//Testing
 $currentEvent = null;
 $upcomingEvents = [];
 
