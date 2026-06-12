@@ -128,6 +128,11 @@
     <div class="calendar-list" id="calendar-list"></div>
 </div>
 
+<div class="calendar-container">
+    <h2 class="calendar-title">Tidigare kungliga uppdrag</h2>
+    <div class="calendar-list" id="past-list"></div>
+</div>
+
 <script>
     const monthMap = {
         '01': 'januari', '02': 'februari', '03': 'mars', '04': 'april',
@@ -135,12 +140,12 @@
         '09': 'september', '10': 'oktober', '11': 'november', '12': 'december',
     };
 
-    function formatDate(isoDate) {
+    function formatDate(isoDate, includeYear = false) {
         const parts = isoDate.split('-');
         if (parts.length !== 3) return isoDate;
         const day = parts[2].replace(/^0/, '');
         const month = monthMap[parts[1]] || parts[1];
-        return `${day} ${month}`;
+        return includeYear ? `${day} ${month} ${parts[0]}` : `${day} ${month}`;
     }
 
     function escapeHtml(str) {
@@ -157,17 +162,21 @@
             const today = new Date().toISOString().slice(0, 10);
             const hero = document.getElementById('hero');
             const list = document.getElementById('calendar-list');
+            const pastList = document.getElementById('past-list');
 
             const sortedEvents = events.slice().sort((a, b) => (a.date || '').localeCompare(b.date || ''));
 
             let currentEvent = null;
             const upcomingEvents = [];
+            const pastEvents = [];
 
             for (const event of sortedEvents) {
                 if (event.date === today) {
                     currentEvent = event;
                 } else if (event.date > today) {
                     upcomingEvents.push(event);
+                } else {
+                    pastEvents.push(event);
                 }
             }
 
@@ -190,6 +199,18 @@
                 list.insertAdjacentHTML('beforeend', `
                     <div class="calendar-item">
                         <div class="calendar-date"><strong>${formatDate(event.date)}</strong></div>
+                        <div class="event-title">${escapeHtml(event.title)}</div>
+                        ${event.participant ? `<div class="event-participant">👑 ${escapeHtml(event.participant)}</div>` : ''}
+                        ${event.location ? `<div class="event-location">📍 ${escapeHtml(event.location)}</div>` : ''}
+                    </div>
+                `);
+            }
+
+            // Render past events (newest first)
+            for (const event of pastEvents.slice().reverse()) {
+                pastList.insertAdjacentHTML('beforeend', `
+                    <div class="calendar-item">
+                        <div class="calendar-date"><strong>${formatDate(event.date, true)}</strong></div>
                         <div class="event-title">${escapeHtml(event.title)}</div>
                         ${event.participant ? `<div class="event-participant">👑 ${escapeHtml(event.participant)}</div>` : ''}
                         ${event.location ? `<div class="event-location">📍 ${escapeHtml(event.location)}</div>` : ''}
