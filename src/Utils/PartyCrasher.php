@@ -46,13 +46,61 @@ class PartyCrasher
         ]);
         $html = curl_exec($ch);
         if (curl_errno($ch)) {
-            // Log cURL errors and return null
             error_log('cURL error: ' . curl_error($ch));
             curl_close($ch);
             return null;
         }
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
+
+        if ($httpCode !== 200) {
+            error_log("fetchHtml: unexpected HTTP status $httpCode for URL: $url");
+            return null;
+        }
+
+        if (empty($html)) {
+            error_log("fetchHtml: empty response body for URL: $url");
+            return null;
+        }
+
         return $html;
+    }
+
+    // Validate that the fetched HTML contains the expected event structure
+    public function validateHtml(string $html): bool
+    {
+        // Must contain at least one lp-article element — the structural marker for events
+        if (strpos($html, 'lp-article') === false) {
+            error_log('validateHtml: no lp-article elements found — page structure may have changed');
+            return false;
+        }
+
+        // Must contain the official programs CSS class used for event data fields
+        if (strpos($html, 'kh-official-programs') === false) {
+            error_log('validateHtml: kh-official-programs class not found — page structure may have changed');
+            return false;
+        }
+
+        return true;
+    }
+
+    // Validate a single parsed event has the minimum required fields
+    public function validateEvent(array $event): bool
+    {
+        if (empty($event['id'])) {
+            return false;
+        }
+
+        if (empty($event['title']) && empty($event['participant'])) {
+            return false;
+        }
+
+        if (!empty($event['date']) && !preg_match('/^\d{4}-\d{2}-\d{2}$/', $event['date'])) {
+            error_log("validateEvent: malformed date '{$event['date']}' for event id '{$event['id']}'");
+            return false;
+        }
+
+        return true;
     }
 
     // Parse official programs from the HTML content
@@ -126,6 +174,11 @@ class PartyCrasher
                 continue;
             }
 
+            // Skip entries that fail validation
+            if (!$this->validateEvent(['id' => $id, 'title' => $title, 'participant' => $participant, 'location' => $location, 'date' => $isoDate])) {
+                continue;
+            }
+
             // Avoid duplicate entries using a hash
             $hash = md5($title . '|' . $participant . '|' . $location . '|' . $isoDate);
             if (isset($seenHashes[$hash])) {
@@ -154,7 +207,7 @@ class PartyCrasher
             $url = "https://www.kungahuset.se/mediecenter/officiella-program?page=$page";
             $html = $this->fetchHtml($url);
 
-            if (!$html) {
+            if (!$html || !$this->validateHtml($html)) {
                 break;
             }
 
