@@ -1,12 +1,5 @@
 [
     {
-        "id": "sv_572610d621969f6ea3cd2ed73",
-        "title": "Digital medverkan vid Utlandssvenskarnas parlament",
-        "participant": "Kronprinsessan",
-        "location": "",
-        "date": "2025-06-18"
-    },
-    {
         "id": "sv_572610d621969f6ea3cd2ed83",
         "title": "Närvaro vid invigning av koloniträdgårdar",
         "participant": "Kungen",
@@ -60,6 +53,13 @@
         "title": "Närvaro vid invigning av jubileumsträdgårdar",
         "participant": "Kungen",
         "location": "Sollidens slott",
+        "date": "2026-06-27"
+    },
+    {
+        "id": "sv_549976a6719eaa96400a48b91",
+        "title": "Närvaro vid invigning av utställningen  Bernadotte i Båstad",
+        "participant": "Prins Carl Philip",
+        "location": "Båstad Konstgalleri, Båstads bibliotek",
         "date": "2026-06-27"
     },
     {
