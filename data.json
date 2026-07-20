@@ -82,5 +82,124 @@
         "participant": "Kungen",
         "location": "Norra Åsum, Kristianstad",
         "date": "2026-07-31"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b675041313",
+        "title": "Besök vid Stockholms Handelskammare",
+        "participant": "Prins Daniel",
+        "location": "Stockholms Handelskammare",
+        "date": "2026-08-17"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b675041321",
+        "title": "Närvaro vid \"CEO Summit 2026\"",
+        "participant": "Prins Daniel",
+        "location": "Grand Hôtel, Stockholm",
+        "date": "2026-08-19"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b67504132f",
+        "title": "Närvaro vid Drottningholms slottsteaters hyllningskonsert till H.M. Drottningen",
+        "participant": "Kungen",
+        "location": "Drottningholms slottsteater",
+        "date": "2026-08-23"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b67504133d",
+        "title": "Närvaro vid invigning av tillgänglighetsanpassad vandringsled",
+        "participant": "Prinsessan Sofia",
+        "location": "Fulufjällets nationalpark",
+        "date": "2026-08-25"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b67504134b",
+        "title": "Möte med representanter från En Frisk Generation",
+        "participant": "Prins Daniel",
+        "location": "Kungl. Slottet",
+        "date": "2026-08-25"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b675041359",
+        "title": "Mottagning för chefer i utrikesförvaltningen",
+        "participant": "Kungen",
+        "location": "Kungl. Slottet",
+        "date": "2026-08-25"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b675041367",
+        "title": "Närvaro vid utdelning av Stockholm Junior Water Prize",
+        "participant": "Kronprinsessan",
+        "location": "Stockholms stadshus",
+        "date": "2026-08-25"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b67504137b",
+        "title": "Närvaro vid Stockholm Water Prize laureate seminar",
+        "participant": "Kungen",
+        "location": "Stockholm Waterfront",
+        "date": "2026-08-26"
+    },
+    {
+        "id": "sv_5564c26b6197a1e447f85063f",
+        "title": "Närvaro vid SNS Tylösandskonferensen",
+        "participant": "Prins Daniel",
+        "location": "Tylösand",
+        "date": "2026-08-26"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b67504138b",
+        "title": "Besök tillsammans med Race for the Baltic med anledning av Östersjödagen",
+        "participant": "Kronprinsessan",
+        "location": "Dalarö",
+        "date": "2026-08-26"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b67504159b",
+        "title": "Närvaro vid utdelning av Stockholm Water Prize",
+        "participant": "Kungen",
+        "location": "Stockholms stadshus",
+        "date": "2026-08-26"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b67504167b",
+        "title": "Närvaro vid utdelningen av  Utmärkt Svensk Form",
+        "participant": "Prins Carl Philip",
+        "location": "Sara kulturhus, Skellefteå",
+        "date": "2026-08-27"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b675041667",
+        "title": "Besök vid samarbetsprojektet The Torne River International Watershed LIFE (TRIWA LIFE)",
+        "participant": "Kungen",
+        "location": "Östra Tornedalen",
+        "date": "2026-08-27"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b67504168a",
+        "title": "Närvaro vid invigningen av Storängens våtmark",
+        "participant": "Kronprinsessan",
+        "location": "Krämbol, Katrineholm",
+        "date": "2026-08-27"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b67504169b",
+        "title": "Möte med forskare som mottagit Hjärt-Lungfondens \"Prins Daniels anslag\"",
+        "participant": "Prins Daniel",
+        "location": "Kungl. Slottet",
+        "date": "2026-08-31"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b6750416c2",
+        "title": "Närvaro vid rundabordssamtal med Prinsparets stiftelse",
+        "participant": "Prins Carl Philip",
+        "location": "",
+        "date": "2026-09-01"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b6750416d1",
+        "title": "Närvaro vid Silviahemmets diplomeringsceremoni",
+        "participant": "Drottningen",
+        "location": "Drottningholms slottsteater",
+        "date": "2026-09-02"
     }
 ]
