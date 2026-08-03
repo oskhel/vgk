@@ -1,12 +1,5 @@
 [
     {
-        "id": "sv_5616cb849196139c0da4136a5",
-        "title": "Närvaro vid högtidsgudstjänst med anledning av Visby domkyrkas 800-årsjubileum",
-        "participant": "Kronprinsessan",
-        "location": "Visby",
-        "date": "2025-07-27"
-    },
-    {
         "id": "sv_57ea42b7f19dd2803ee8aa21d",
         "title": "Firande av DD.MM. Konungen och Drottningens guldbröllop",
         "participant": "Kungen",
@@ -96,6 +89,27 @@
         "participant": "Prins Daniel",
         "location": "Grand Hôtel, Stockholm",
         "date": "2026-08-19"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b675064e67",
+        "title": "Besök med anledning av Vasa hovrätts 250-årsjubileum",
+        "participant": "Kronprinsessan",
+        "location": "Vasa, Finland",
+        "date": "2026-08-21"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b675064ee7",
+        "title": "Besök på Wärtsilä teknologicenter",
+        "participant": "Kronprinsessan",
+        "location": "Vasklot, Vasa, Finland",
+        "date": "2026-08-21"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b675065160",
+        "title": "Besök på Aalto-universitetet och Aalto Design Factory",
+        "participant": "Kronprinsessan",
+        "location": "Esbo, Finland",
+        "date": "2026-08-21"
     },
     {
         "id": "sv_547ffebf519f5a4b67504132f",
@@ -201,5 +215,19 @@
         "participant": "Drottningen",
         "location": "Drottningholms slottsteater",
         "date": "2026-09-02"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b6750416e2",
+        "title": "Besök till Läckö slott",
+        "participant": "Kungen",
+        "location": "Läckö slott",
+        "date": "2026-09-03"
+    },
+    {
+        "id": "sv_547ffebf519f5a4b675041967",
+        "title": "Besök med anledning av Rörstrands 300-årsjubileum",
+        "participant": "Kungen",
+        "location": "Rörstrands museum, Lidköping",
+        "date": "2026-09-03"
     }
 ]
