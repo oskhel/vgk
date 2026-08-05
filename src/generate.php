@@ -20,11 +20,15 @@ foreach ($scraped as $event) {
     $existing[$event['id']] = $event;
 }
 
-// Drop events older than 1 year
-$cutoff = date('Y-m-d', strtotime('-1 year'));
-$merged = array_filter($existing, function($event) use ($cutoff) {
-    return !empty($event['date']) && $event['date'] >= $cutoff;
+// Keep only events that have a date
+$merged = array_filter($existing, function($event) {
+    return !empty($event['date']);
 });
+$merged = array_values($merged);
+
+// Sort by date descending and keep the last 50 events regardless of date
+usort($merged, function($a, $b) { return strcmp($b['date'], $a['date']); });
+$merged = array_slice($merged, 0, 50);
 
 // Sort by date ascending
 usort($merged, function($a, $b) { return strcmp($a['date'], $b['date']); });
