@@ -174,6 +174,11 @@ class PartyCrasher
                 continue;
             }
 
+            // Cap field lengths as a safeguard against unexpectedly large/malformed upstream content
+            $title = mb_substr($title, 0, 500);
+            $participant = mb_substr($participant, 0, 255);
+            $location = mb_substr($location, 0, 255);
+
             // Skip entries that fail validation
             if (!$this->validateEvent(['id' => $id, 'title' => $title, 'participant' => $participant, 'location' => $location, 'date' => $isoDate])) {
                 continue;

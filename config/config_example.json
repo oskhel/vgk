@@ -4,5 +4,6 @@
         "dbname": "",
         "username": "",
         "password": ""
-    }
+    },
+    "cron_secret": ""
 }

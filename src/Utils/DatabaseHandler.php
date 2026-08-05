@@ -22,7 +22,9 @@ class DatabaseHandler
             $this->pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
-            die("Database connection error: " . $e->getMessage());
+            // Log the detailed error internally but never expose connection details to the client
+            error_log('Database connection error: ' . $e->getMessage());
+            die('Database connection error. Please try again later.');
         }
     }
 

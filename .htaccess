@@ -5,7 +5,9 @@
 </Files>
 
 # Deny access to sensitive files
-<FilesMatch "\.(env|json|ini|log|sh|sql|bak|config|git|gitignore)$">
+# Note: .json is intentionally excluded here — data.json must remain publicly
+# readable, and config/*.json is already blocked by the config/ RewriteRule below.
+<FilesMatch "\.(env|ini|log|sh|sql|bak|config|git|gitignore)$">
     Order Allow,Deny
     Deny from all
 </FilesMatch>
