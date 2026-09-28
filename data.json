@@ -1,12 +1,5 @@
 [
     {
-        "id": "sv_57969787219ff10248daf4ec",
-        "title": "Prins Daniels Fellowships entreprenörsresa",
-        "participant": "Prins Daniel",
-        "location": "Blekinge",
-        "date": "2026-09-24"
-    },
-    {
         "id": "sv_5751ae5011a0862bdc23783",
         "title": "Närvaro vid kartingtävling samt utdelning av Prins Carl Philips racingpokal",
         "participant": "Prins Carl Philip",
@@ -64,9 +57,9 @@
     },
     {
         "id": "sv_5751ae5011a0862bdc2399c",
-        "title": "Besök tillsammans med stiftelsen Ungt Ledarskap",
+        "title": "Besök tillsammans med stiftelsen Ungt Ledarskap till Kalthoff yxor",
         "participant": "Kungen",
-        "location": "",
+        "location": "Kalthoff yxor",
         "date": "2026-10-01"
     },
     {
@@ -348,5 +341,12 @@
         "participant": "Kronprinsessan",
         "location": "Kungl. Slottet",
         "date": "2026-11-05"
+    },
+    {
+        "id": "sv_5efffa921a0addc0481369ea",
+        "title": "Närvaro vid Gundua Foundations 20-årsjubileum",
+        "participant": "Kronprinsessan",
+        "location": "Bio Fågel Blå, Stockholm",
+        "date": "2026-11-17"
     }
 ]
