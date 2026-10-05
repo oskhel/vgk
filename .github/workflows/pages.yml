@@ -6,6 +6,11 @@ on:
     paths:
       - 'index.html'
       - 'data.json'
+  # Pushes made with GITHUB_TOKEN (by scrape.yml) don't trigger `push` workflows
+  workflow_run:
+    workflows: ['Scrape royal events']
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -19,6 +24,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
