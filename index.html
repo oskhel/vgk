@@ -18,11 +18,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            box-sizing: border-box;
             background: linear-gradient(135deg, #002147, #004080);
             color: #f8c471;
             text-align: center;
-            padding: 20px;
+            padding: 20px 20px 90px;
             border-bottom: 5px solid #d4af37;
         }
         .hero h1 {
@@ -59,6 +60,13 @@
             font-size: 1.2em;
             font-weight: 400;
             margin: 0;
+        }
+        .hero .hero-event {
+            max-width: 800px;
+            padding: 1em 0;
+        }
+        .hero .hero-event + .hero-event {
+            border-top: 1px solid rgba(212, 175, 55, 0.4);
         }
         .calendar-container {
             margin: 20px auto;
@@ -159,20 +167,20 @@
     fetch('data.json')
         .then(r => r.json())
         .then(events => {
-            const today = new Date().toISOString().slice(0, 10);
+            const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Stockholm' });
             const hero = document.getElementById('hero');
             const list = document.getElementById('calendar-list');
             const pastList = document.getElementById('past-list');
 
             const sortedEvents = events.slice().sort((a, b) => (a.date || '').localeCompare(b.date || ''));
 
-            let currentEvent = null;
+            const todayEvents = [];
             const upcomingEvents = [];
             const pastEvents = [];
 
             for (const event of sortedEvents) {
                 if (event.date === today) {
-                    currentEvent = event;
+                    todayEvents.push(event);
                 } else if (event.date > today) {
                     upcomingEvents.push(event);
                 } else {
@@ -181,14 +189,18 @@
             }
 
             // Render hero
-            const scrollHint = hero.querySelector('p');
-            if (currentEvent) {
+            if (todayEvents.length) {
+                const items = todayEvents.map(event => `
+                    <div class="hero-event">
+                        <p class="title"><strong>${escapeHtml(event.title)}</strong></p>
+                        ${event.participant ? `<p class="participant">${escapeHtml(event.participant)}</p>` : ''}
+                        ${event.location ? `<p class="location">${escapeHtml(event.location)}</p>` : ''}
+                    </div>
+                `).join('');
                 hero.insertAdjacentHTML('afterbegin', `
                     <h1>Dagens kungliga uppdrag</h1>
-                    <p class="title"><strong>${escapeHtml(currentEvent.title)}</strong></p>
-                    ${currentEvent.participant ? `<p class="participant">${escapeHtml(currentEvent.participant)}</p>` : ''}
-                    ${currentEvent.location ? `<p class="location">${escapeHtml(currentEvent.location)}</p>` : ''}
-                    ${currentEvent.date ? `<p class="date">${formatDate(currentEvent.date)}</p>` : ''}
+                    <p class="date">${formatDate(today)}</p>
+                    ${items}
                 `);
             } else {
                 hero.insertAdjacentHTML('afterbegin', '<h1>Inget kungligt uppdrag idag</h1><p class="no-event"></p>');
