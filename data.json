@@ -357,10 +357,31 @@
         "date": "2026-11-02"
     },
     {
+        "id": "sv_51abb6a6f1a162f0425f3fe88",
+        "title": "Styrgruppsmöte i Generation Pep",
+        "participant": "Prins Daniel",
+        "location": "Kungl. Slottet",
+        "date": "2026-11-02"
+    },
+    {
         "id": "sv_57853b0a21a0adb42f1b238b0",
         "title": "Prins Daniels Fellowships entreprenörsresa",
         "participant": "Prins Daniel",
-        "location": "Gävleborg",
+        "location": "Gävle",
+        "date": "2026-11-04"
+    },
+    {
+        "id": "sv_5bf7e0901a1631b22629535",
+        "title": "Styrelsesammanträde i Skandia Idéer för livet",
+        "participant": "Prinsessan Sofia",
+        "location": "",
+        "date": "2026-11-04"
+    },
+    {
+        "id": "sv_546e802c61a157a850b03c9d",
+        "title": "Audiens för Ungerns talman H.E.  Ágnes Forsthoffer",
+        "participant": "Kronprinsessan",
+        "location": "Kungl. Slottet",
         "date": "2026-11-04"
     },
     {
@@ -369,6 +390,48 @@
         "participant": "Kronprinsessan",
         "location": "Kungl. Slottet",
         "date": "2026-11-05"
+    },
+    {
+        "id": "sv_522aa69341a115b2b1142ceee",
+        "title": "Projektbesök tillsammans med World Childhood Foundation Brazil",
+        "participant": "Drottningen",
+        "location": "São Paulo, Brasilien",
+        "date": "2026-11-05"
+    },
+    {
+        "id": "sv_546e802c61a157a850b03d7f",
+        "title": "Möte med representanter från Svensk Form",
+        "participant": "Prins Carl Philip",
+        "location": "Skeppsholmen",
+        "date": "2026-11-05"
+    },
+    {
+        "id": "sv_546e802c61a157a850b03f39",
+        "title": "Styrelsemöte i stiftelsen Drottning Sophias skyddshem",
+        "participant": "Prinsessan Sofia",
+        "location": "Stockholm",
+        "date": "2026-11-05"
+    },
+    {
+        "id": "sv_51abb6a6f1a162f0425f3feb0",
+        "title": "Adeptträff med Prins Daniels Fellowship",
+        "participant": "Prins Daniel",
+        "location": "Northzone",
+        "date": "2026-11-05"
+    },
+    {
+        "id": "sv_522aa69341a115b2b1142cf05",
+        "title": "Närvaro vid World Childhood Foundation Brazils galamiddag",
+        "participant": "Kungen",
+        "location": "São Paulo, Brasilien",
+        "date": "2026-11-05"
+    },
+    {
+        "id": "sv_522aa69341a115b2b1142cf1a",
+        "title": "Närvaro vid uppmärksammandet av Sverige – Brasilien 200 år av diplomatiska relationer",
+        "participant": "Kungen",
+        "location": "São Paulo, Brasilien",
+        "date": "2026-11-06"
     },
     {
         "id": "sv_57853b0a21a0adb42f1b65de8",
@@ -396,6 +459,27 @@
         "title": "Närvaro vid Gastronomiska akademiens höstsammankomst",
         "participant": "Kungen",
         "location": "Stockholm",
+        "date": "2026-11-11"
+    },
+    {
+        "id": "sv_546e802c61a157a850b03f4e",
+        "title": "Besök tillsammans med stiftelsen Musikbojen",
+        "participant": "Prins Carl Philip",
+        "location": "Lilla Erstagården",
+        "date": "2026-11-11"
+    },
+    {
+        "id": "sv_5bf7e0901a1631b22629527",
+        "title": "Besök vid Utrikespolitiska institutet",
+        "participant": "Kronprinsessan",
+        "location": "Utrikespolitiska institutet",
+        "date": "2026-11-11"
+    },
+    {
+        "id": "sv_546e802c61a157a850b03f5c",
+        "title": "Avskedsaudiens för Georgiens ambassadör H.E.    Mr Irakli Khutsurauli",
+        "participant": "Kungen",
+        "location": "Kungl. Slottet",
         "date": "2026-11-11"
     },
     {
@@ -427,6 +511,27 @@
         "date": "2026-11-12"
     },
     {
+        "id": "sv_546e802c61a157a850b03f77",
+        "title": "Företräde för Svenska Akademiens ständiga sekreterare Ingrid Carlberg",
+        "participant": "Kungen",
+        "location": "Kungl. Slottet",
+        "date": "2026-11-12"
+    },
+    {
+        "id": "sv_51abb6a6f1a162f0425f3f1d7",
+        "title": "Besök vid Kemikalieinspektionen",
+        "participant": "Kronprinsessan",
+        "location": "Kemikalieinspektionen, Sundbyberg",
+        "date": "2026-11-12"
+    },
+    {
+        "id": "sv_51abb6a6f1a162f0425f2a54e",
+        "title": "Närvaro vid finalen i Stockholm Open",
+        "participant": "Prins Daniel",
+        "location": "Kungl. Tennishallen",
+        "date": "2026-11-14"
+    },
+    {
         "id": "sv_57853b0a21a0adb42f1b66a93",
         "title": "Styrgruppsmöte i Prins Daniels Fellowship",
         "participant": "Prins Daniel",
@@ -438,6 +543,13 @@
         "title": "Medaljutdelning",
         "participant": "Kungen",
         "location": "Kungl. Slottet",
+        "date": "2026-11-16"
+    },
+    {
+        "id": "sv_546e802c61a157a850b03fa4",
+        "title": "Närvaro vid Hjärnfondens årliga evenemang",
+        "participant": "Kronprinsessan",
+        "location": "Hamburger Börs, Stockholm",
         "date": "2026-11-16"
     },
     {
@@ -490,6 +602,20 @@
         "date": "2026-11-19"
     },
     {
+        "id": "sv_546e802c61a157a850b04043",
+        "title": "Besök i Värmland",
+        "participant": "Prins Carl Philip",
+        "location": "Kristinehamn, Karlstad samt Hammarö",
+        "date": "2026-11-19"
+    },
+    {
+        "id": "sv_51abb6a6f1a162f0425f2a7ab",
+        "title": "Närvaro vid World Childhood Foundation USA:s galamiddag",
+        "participant": "Prinsessan Madeleine",
+        "location": "New York City, USA",
+        "date": "2026-11-19"
+    },
+    {
         "id": "sv_57853b0a21a0adb42f1b66b9b",
         "title": "Möte med deltagare i Utrikesdepartementets diplomat-, utrikesadministratörs- och assistentprogram",
         "participant": "Kronprinsessan",
@@ -500,7 +626,7 @@
         "id": "sv_57853b0a21a0adb42f1b66bc0",
         "title": "Styrelsemöte Mentor Sverige",
         "participant": "Drottningen",
-        "location": "Stockholm",
+        "location": "Hässelby",
         "date": "2026-11-23"
     },
     {
@@ -511,10 +637,45 @@
         "date": "2026-11-23"
     },
     {
+        "id": "sv_51abb6a6f1a162f0425f2a7bd",
+        "title": "Närvaro vid Tech Think Tank tillsammans med World Childhood Foundation",
+        "participant": "Prinsessan Madeleine",
+        "location": "Telias huvudkontor",
+        "date": "2026-11-23"
+    },
+    {
+        "id": "sv_51abb6a6f1a162f0425f3fe9c",
+        "title": "Besök till En Svensk Klassikers kansli",
+        "participant": "Prins Daniel",
+        "location": "Lidingö",
+        "date": "2026-11-23"
+    },
+    {
+        "id": "sv_51abb6a6f1a162f0425f2a7cb",
+        "title": "Närvaro vid organisationen  Friends   förbundsträff för tryggare idrott",
+        "participant": "Prinsessan Sofia",
+        "location": "Strawberry arena",
+        "date": "2026-11-24"
+    },
+    {
         "id": "sv_57853b0a21a0adb42f1b66c53",
         "title": "Besök hos Berättarministeriet",
         "participant": "Prins Carl Philip",
         "location": "Husby",
         "date": "2026-11-25"
+    },
+    {
+        "id": "sv_546e802c61a157a850b0400d",
+        "title": "Besök i Västerbotten",
+        "participant": "Kronprinsessan",
+        "location": "",
+        "date": "2026-11-26"
+    },
+    {
+        "id": "sv_51abb6a6f1a162f0425f2a7d9",
+        "title": "Närvaro vid svenska Sofiaförsamlingen i Paris 400-årsjubileum",
+        "participant": "Kungen",
+        "location": "Svenska kyrkan i Paris, Frankrike",
+        "date": "2026-11-29"
     }
 ]
