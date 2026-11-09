@@ -1,86 +1,9 @@
 [
     {
-        "id": "sv_541c1007a1a04222227f33df7",
-        "title": "Styrelsemöte i Prinsparets stiftelse",
-        "participant": "Prins Carl Philip",
-        "location": "Kungl. Slottet",
-        "date": "2026-09-28"
-    },
-    {
-        "id": "sv_541c1007a1a04222227f33de9",
-        "title": "Möte med styrgruppen för initiativet \"Hjärnhälsa\"",
-        "participant": "Drottningen",
-        "location": "",
-        "date": "2026-09-28"
-    },
-    {
-        "id": "sv_57ae98c4b1a0423946be63169",
-        "title": "Närvaro vid gudstjänst med anledning av riksmötets öppnande",
-        "participant": "Kungen",
-        "location": "Storkyrkan, Gamla stan, Stockholm",
-        "date": "2026-09-29"
-    },
-    {
-        "id": "sv_57ae98c4b1a0423946be63448",
-        "title": "Närvaro vid riksmötets öppnande",
-        "participant": "Kungen",
-        "location": "Riksdagen",
-        "date": "2026-09-29"
-    },
-    {
-        "id": "sv_57ae98c4b1a0423946be6352b",
-        "title": "Närvaro vid föreställning med anledning av riksmötets öppnande",
-        "participant": "Kungen",
-        "location": "Stockholms konserthus",
-        "date": "2026-09-29"
-    },
-    {
-        "id": "sv_57969787219ff10248daf4fe",
-        "title": "Närvaro vid Operation Smiles \"Smilepriset\"",
-        "participant": "Prins Carl Philip",
-        "location": "Filmstaden Sergel",
-        "date": "2026-09-30"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc2368cb",
-        "title": "Avskedsaudiens för Colombias ambassadör H.E. Guillermo Francisco Reyes González",
-        "participant": "Kungen",
-        "location": "Kungl. Slottet",
-        "date": "2026-09-30"
-    },
-    {
         "id": "sv_5751ae5011a0862bdc2399c",
         "title": "Besök tillsammans med stiftelsen Ungt Ledarskap till Kalthoff yxor",
         "participant": "Kungen",
         "location": "Kalthoff yxor",
-        "date": "2026-10-01"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc239b8",
-        "title": "Medverkan i juryn samt prisutdelning av Årets kock 2026",
-        "participant": "Prins Carl Philip",
-        "location": "Annexet",
-        "date": "2026-10-01"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23a02",
-        "title": "Närvaro vid stiftelsen Ungt ledarskaps seminarium",
-        "participant": "Kungen",
-        "location": "Kungl. Slottet",
-        "date": "2026-10-01"
-    },
-    {
-        "id": "sv_5707543d1a0a368353fc666",
-        "title": "Företräde för guvernör Tim Walz, State of Minnesota",
-        "participant": "Prins Daniel",
-        "location": "Kungl. Slottet",
-        "date": "2026-10-01"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23a10",
-        "title": "Närvaro vid konserten \"Love of my life\" med Sveriges Radios symfoniorkester samt trombonist Nils Landgren",
-        "participant": "Kungen",
-        "location": "Berwaldhallen, Stockholm",
         "date": "2026-10-01"
     },
     {
@@ -266,13 +189,6 @@
         "date": "2026-10-15"
     },
     {
-        "id": "sv_5751ae5011a0862bdc231078",
-        "title": "Styrelsemöte i stiftelsen Silviahemmet",
-        "participant": "Drottningen",
-        "location": "Silviahemmet",
-        "date": "2026-10-16"
-    },
-    {
         "id": "sv_5751ae5011a0862bdc231086",
         "title": "Närvaro vid Sophiahemmet högskolas examensceremoni",
         "participant": "Prinsessan Sofia",
@@ -434,6 +350,13 @@
         "date": "2026-11-06"
     },
     {
+        "id": "sv_55d65c4971a1a18a16a114bad",
+        "title": "Besök vid Försvarets radioanstalt (FRA)",
+        "participant": "Prins Carl Philip",
+        "location": "Försvarets radioanstalt (FRA)",
+        "date": "2026-11-09"
+    },
+    {
         "id": "sv_57853b0a21a0adb42f1b65de8",
         "title": "Närvaro vid de kungliga akademiernas seminarium \"Kultur, bildning och samhällsstyrka\"",
         "participant": "Kungen",
@@ -483,6 +406,13 @@
         "date": "2026-11-11"
     },
     {
+        "id": "sv_5736421421a1a19e8d353b2f5",
+        "title": "Avskedsaudiens för Rwandas ambassadör H.E. Diane Gashumba",
+        "participant": "Kungen",
+        "location": "Kungl. Slottet",
+        "date": "2026-11-11"
+    },
+    {
         "id": "sv_57853b0a21a0adb42f1b65fc9",
         "title": "Närvaro vid invigning av SLU Lövsta lantbruksforsknings nya grisstallar",
         "participant": "Prins Carl Philip",
@@ -500,7 +430,7 @@
         "id": "sv_57853b0a21a0adb42f1b6680d",
         "title": "Närvaro vid Kungl. Krigsvetenskapsakademiens högtidssammankomst",
         "participant": "Kungen",
-        "location": "Börshuset",
+        "location": "Riddarhuset",
         "date": "2026-11-12"
     },
     {
@@ -553,6 +483,13 @@
         "date": "2026-11-16"
     },
     {
+        "id": "sv_55d65c4971a1a18a16a114d3f",
+        "title": "Styrelsemöte i Stenhammars godsförvaltning",
+        "participant": "Kungen",
+        "location": "Stenhammars slott",
+        "date": "2026-11-16"
+    },
+    {
         "id": "sv_5efffa921a0addc0481369ea",
         "title": "Närvaro vid Gundua Foundations 20-årsjubileum",
         "participant": "Kronprinsessan",
@@ -571,6 +508,13 @@
         "title": "Diplomatmottagning",
         "participant": "Kungen",
         "location": "Kungl. Slottet",
+        "date": "2026-11-17"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a114f99",
+        "title": "Besök vid ledningsövningen Polestar",
+        "participant": "Prins Carl Philip",
+        "location": "Boden",
         "date": "2026-11-17"
     },
     {
@@ -626,7 +570,7 @@
         "id": "sv_57853b0a21a0adb42f1b66bc0",
         "title": "Styrelsemöte Mentor Sverige",
         "participant": "Drottningen",
-        "location": "Hässelby",
+        "location": "Smedshagsskolan, Hässelby",
         "date": "2026-11-23"
     },
     {
@@ -658,6 +602,13 @@
         "date": "2026-11-24"
     },
     {
+        "id": "sv_55d65c4971a1a18a16a11522e",
+        "title": "Sverigemiddag",
+        "participant": "Kungen",
+        "location": "Kungl. Slottet",
+        "date": "2026-11-24"
+    },
+    {
         "id": "sv_57853b0a21a0adb42f1b66c53",
         "title": "Besök hos Berättarministeriet",
         "participant": "Prins Carl Philip",
@@ -665,10 +616,17 @@
         "date": "2026-11-25"
     },
     {
+        "id": "sv_5736421421a1a19e8d35ceda",
+        "title": "Närvaro vid Fossilfritt Sveriges årskonferens \"Fossilfri konkurrenskraft 2026\"",
+        "participant": "Kronprinsessan",
+        "location": "Berns salonger",
+        "date": "2026-11-25"
+    },
+    {
         "id": "sv_546e802c61a157a850b0400d",
         "title": "Besök i Västerbotten",
         "participant": "Kronprinsessan",
-        "location": "",
+        "location": "Umeå samt Lagnäsets naturreservat",
         "date": "2026-11-26"
     },
     {
@@ -677,5 +635,180 @@
         "participant": "Kungen",
         "location": "Svenska kyrkan i Paris, Frankrike",
         "date": "2026-11-29"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a115263",
+        "title": "Besök Försvarsmakten",
+        "participant": "Prins Carl Philip",
+        "location": "",
+        "date": "2026-12-01"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a11527f",
+        "title": "Närvaro vid utdelning av utmärkelsen Årets nybyggare",
+        "participant": "Kungen",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-01"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a115271",
+        "title": "Närvaro vid utdelning av Childhoodpriset",
+        "participant": "Drottningen",
+        "location": "",
+        "date": "2026-12-01"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a11528d",
+        "title": "Högtidliga audienser",
+        "participant": "Kungen",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-02"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a11529c",
+        "title": "Närvaro vid Tyska Damklubbens adventsfirande",
+        "participant": "Drottningen",
+        "location": "Tyska kyrkan",
+        "date": "2026-12-02"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a1152ab",
+        "title": "Styrelsesammanträde i Prinsessan Estelles kulturstiftelse",
+        "participant": "Prins Daniel",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-02"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a1152ca",
+        "title": "Sammanträde i Kronprinsessan Victorias stiftelse för vetenskaplig forskning och utbildning",
+        "participant": "Kronprinsessan",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-02"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a1152d9",
+        "title": "Styrelsemöte i Prinsparets stiftelse",
+        "participant": "Prins Carl Philip",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-02"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a1152bd",
+        "title": "Sammanträde i Drottning Silvias stiftelse för vetenskaplig forskning och utbildning",
+        "participant": "Drottningen",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-02"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a1152f5",
+        "title": "Sammanträde i Konung Carl XVI Gustafs stiftelse för vetenskaplig forskning och utbildning",
+        "participant": "Kungen",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-02"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a115303",
+        "title": "Företräde Nobelstiftelsen för presentation av årets nobelpristagare",
+        "participant": "Kungen",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-02"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a115311",
+        "title": "Församlingsafton",
+        "participant": "Kungen",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-02"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a11564e",
+        "title": "Sammanträde i Stiftelsen Drottning Silvias jubileumsfond för forskning om barn och funktionshinder",
+        "participant": "Drottningen",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-03"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a11565c",
+        "title": "Närvaro vid Stockholms berättarcentrums föreläsning \"Barn i brottslighetens skugga\"",
+        "participant": "Drottningen",
+        "location": "Aula Magna, Stockholms universitet",
+        "date": "2026-12-03"
+    },
+    {
+        "id": "sv_5751ae5011a0862bdc231078",
+        "title": "Styrelsemöte i stiftelsen Silviahemmet",
+        "participant": "Drottningen",
+        "location": "Silviahemmet",
+        "date": "2026-12-04"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a115671",
+        "title": "Närvaro vid Sten A. Olssons stiftelse för forskning och kulturs 30-årsjubileum",
+        "participant": "Kungen",
+        "location": "Clarion Post Hotel, Göteborg",
+        "date": "2026-12-04"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a115681",
+        "title": "Närvaro vid utdelning av Prins Carl Philips pris",
+        "participant": "Prins Carl Philip",
+        "location": "Strawberry Arena, Solna",
+        "date": "2026-12-06"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a11590b",
+        "title": "Diplomatmottagning",
+        "participant": "Kungen",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-08"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a115939",
+        "title": "Närvaro vid Nobel Prize Concert",
+        "participant": "Kungen",
+        "location": "Stockholms konserthus",
+        "date": "2026-12-08"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a115963",
+        "title": "Närvaro vid utdelning av 2026 års Nobelpris",
+        "participant": "Kungen",
+        "location": "Stockholms konserthus",
+        "date": "2026-12-10"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a115955",
+        "title": "Närvaro vid Nobelbanketten",
+        "participant": "Kungen",
+        "location": "Stockholms stadshus",
+        "date": "2026-12-10"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a115948",
+        "title": "Kungens middag för Nobelpristagarna",
+        "participant": "",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-11"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a1159e1",
+        "title": "Företräde för Skogshögskolans studentkår för överlämnande av julgranar",
+        "participant": "Drottningen",
+        "location": "Kungl. Slottet",
+        "date": "2026-12-15"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a1159ee",
+        "title": "Närvaro vid Svenska Akademiens högtidssammankomst",
+        "participant": "",
+        "location": "Svenska Akademien",
+        "date": "2026-12-20"
+    },
+    {
+        "id": "sv_55d65c4971a1a18a16a1159fd",
+        "title": "Närvaro vid konserten ”Jul i Vasastan”",
+        "participant": "Prins Carl Philip",
+        "location": "Gustaf Vasa kyrka, Stockholm",
+        "date": "2026-12-21"
     }
 ]
