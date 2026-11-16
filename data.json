@@ -1,103 +1,5 @@
 [
     {
-        "id": "sv_5751ae5011a0862bdc2399c",
-        "title": "Besök tillsammans med stiftelsen Ungt Ledarskap till Kalthoff yxor",
-        "participant": "Kungen",
-        "location": "Kalthoff yxor",
-        "date": "2026-10-01"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc232dee1",
-        "title": "Lunch för Estlands president Alar Karis",
-        "participant": "Kungen",
-        "location": "Kungl. Slottet",
-        "date": "2026-10-02"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23a42",
-        "title": "Royal Technology Mission",
-        "participant": "Kungen",
-        "location": "Zürich, Schweiz",
-        "date": "2026-10-05"
-    },
-    {
-        "id": "sv_57853b0a21a0adb42f1b3766",
-        "title": "Närvaro vid nyinvigning av Drottning Kristinas skulptursamling",
-        "participant": "Prins Daniel",
-        "location": "Museo del Prado, Madrid, Spanien",
-        "date": "2026-10-06"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23a7e",
-        "title": "Sammanträde i Kronprinsessan Margaretas Landstormsfond",
-        "participant": "Kronprinsessan",
-        "location": "Kungl. Slottet",
-        "date": "2026-10-06"
-    },
-    {
-        "id": "sv_57853b0a21a0adb42f1b23496",
-        "title": "Närvaro vid premiären av filmen \"Ocean Dreams\"",
-        "participant": "Kronprinsessan",
-        "location": "Cosmonova, Naturhistoriska riksmuseet",
-        "date": "2026-10-06"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23a58",
-        "title": "Royal Technology Mission",
-        "participant": "Kungen",
-        "location": "München, Tyskland",
-        "date": "2026-10-07"
-    },
-    {
-        "id": "sv_57853b0a21a0adb42f1b65a48",
-        "title": "Närvaro vid  Regional samverkansövning 2026 Utrym   (RSÖ26 Utrym)",
-        "participant": "Kronprinsessan",
-        "location": "Gotland",
-        "date": "2026-10-07"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23a8f",
-        "title": "Närvaro vid Mentor Tysklands 10-årsjubileum",
-        "participant": "Drottningen",
-        "location": "Mainau, Tyskland",
-        "date": "2026-10-08"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23a6b",
-        "title": "Royal Technology Mission",
-        "participant": "Kungen",
-        "location": "Stuttgart, Tyskland",
-        "date": "2026-10-08"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23aa4",
-        "title": "Besök med World Childhood Foundation samt närvaro vid prisutdelningsceremonin av \"Preis für Kindeswohl\"",
-        "participant": "Drottningen",
-        "location": "Düsseldorf, Tyskland",
-        "date": "2026-10-09"
-    },
-    {
-        "id": "sv_57853b0a21a0adb42f1b34dc",
-        "title": "Besök vid SCAPIS",
-        "participant": "Prins Daniel",
-        "location": "Sahlgrenska Universitetssjukhuset",
-        "date": "2026-10-09"
-    },
-    {
-        "id": "sv_57853b0a21a0adb42f1b234f0",
-        "title": "Närvaro vid utdelning av Dyslexipriset 2026",
-        "participant": "Prins Carl Philip",
-        "location": "Kungl. Slottet",
-        "date": "2026-10-09"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23d62",
-        "title": "Närvaro vid utdelning av Hasselbladspriset",
-        "participant": "Prins Daniel",
-        "location": "World of Volvo, Göteborg",
-        "date": "2026-10-09"
-    },
-    {
         "id": "sv_57853b0a21a0adb42f1b23554",
         "title": "UD-föredragning inför statsbesök från Singapore",
         "participant": "Kungen",
@@ -109,20 +11,6 @@
         "title": "Besök hos Polisen",
         "participant": "Kronprinsessan",
         "location": "Stockholm",
-        "date": "2026-10-12"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23d98",
-        "title": "Närvaro vid stipendieutdelning i teckningstävlingen \"Den tänkande handen\"",
-        "participant": "Kungen",
-        "location": "Konstakademien",
-        "date": "2026-10-12"
-    },
-    {
-        "id": "sv_5657434811a0eb6f137bb8e2",
-        "title": "Testdag med vinnarna i Prins Carl Philips racingpokal",
-        "participant": "Prins Carl Philip",
-        "location": "Gelleråsen",
         "date": "2026-10-12"
     },
     {
@@ -789,6 +677,13 @@
         "participant": "",
         "location": "Kungl. Slottet",
         "date": "2026-12-11"
+    },
+    {
+        "id": "sv_51e4be0901a1c4872e3ee179",
+        "title": "Närvaro vid Lilla Akademiens luciakonsert \"White Light\"",
+        "participant": "Kungen",
+        "location": "Lilla Akademien",
+        "date": "2026-12-13"
     },
     {
         "id": "sv_55d65c4971a1a18a16a1159e1",
