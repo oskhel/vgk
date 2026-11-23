@@ -1,114 +1,9 @@
 [
     {
-        "id": "sv_57853b0a21a0adb42f1b23554",
-        "title": "UD-föredragning inför statsbesök från Singapore",
-        "participant": "Kungen",
-        "location": "Kungl. Slottet",
-        "date": "2026-10-12"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23d8a",
-        "title": "Besök hos Polisen",
-        "participant": "Kronprinsessan",
-        "location": "Stockholm",
-        "date": "2026-10-12"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23da6",
-        "title": "Global Child Forum",
-        "participant": "Kungen",
-        "location": "Kungl. Slottet",
-        "date": "2026-10-13"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23dee",
-        "title": "Besök vid Länsstyrelsen Stockholm",
-        "participant": "Kronprinsessan",
-        "location": "Länsstyrelsen, Stockholm",
-        "date": "2026-10-13"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc231026",
-        "title": "Närvaro vid WASP Academia and Industry Days",
-        "participant": "Prins Daniel",
-        "location": "Cirkus, Stockholm",
-        "date": "2026-10-14"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc231036",
-        "title": "Närvaro vid utdelning av stipendier ur Konung Gustaf V:s och Drottning Victorias Frimurarestiftelse",
-        "participant": "Drottningen",
-        "location": "Bååtska palatset, Stockholm",
-        "date": "2026-10-14"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc231044",
-        "title": "Närvaro vid lansering av Mentor Sveriges rapport \"Förebildseffekten\"",
-        "participant": "Drottningen",
-        "location": "Kungl. Slottet",
-        "date": "2026-10-14"
-    },
-    {
-        "id": "sv_57853b0a21a0adb42f1b65aa2",
-        "title": "Besök i Västernorrland",
-        "participant": "Kronprinsessan",
-        "location": "Härnösand",
-        "date": "2026-10-14"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc23106a",
-        "title": "Högtidliga audienser",
-        "participant": "Kungen",
-        "location": "Kungl. Slottet",
-        "date": "2026-10-15"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc231056",
-        "title": "Närvaro vid rundabordssamtal i samband med World Mental Health Day",
-        "participant": "Drottningen",
-        "location": "Göteborgs universitet",
-        "date": "2026-10-15"
-    },
-    {
-        "id": "sv_57853b0a21a0adb42f1b65dca",
-        "title": "Besök i Västernorrland",
-        "participant": "Kronprinsessan",
-        "location": "Docksta, Friluftsbyn samt Sandö",
-        "date": "2026-10-15"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc231086",
-        "title": "Närvaro vid Sophiahemmet högskolas examensceremoni",
-        "participant": "Prinsessan Sofia",
-        "location": "Stockholms stadshus",
-        "date": "2026-10-16"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc231096",
-        "title": "Närvaro vid Svensk-Brasilianska föreningens firande av 200 år av diplomatiska och kulturella relationer mellan Sverige och Brasilien",
-        "participant": "Drottningen",
-        "location": "Vasa museet, Stockholm",
-        "date": "2026-10-16"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc2310a9",
-        "title": "Närvaro vid Ersta diakonis 175-årsjubileum",
-        "participant": "Drottningen",
-        "location": "Stockholms konserthus",
-        "date": "2026-10-18"
-    },
-    {
         "id": "sv_5751ae5011a0862bdc2368ed",
         "title": "Närvaro vid Stockholm Rotaryklubbs 100-årsjubileum",
         "participant": "Prins Carl Philip",
         "location": "Grand Hôtel",
-        "date": "2026-10-19"
-    },
-    {
-        "id": "sv_5751ae5011a0862bdc236951",
-        "title": "Närvaro vid utdelning av Marcus Wallenbergpriset",
-        "participant": "Prins Carl Philip",
-        "location": "",
         "date": "2026-10-19"
     },
     {
@@ -514,7 +409,21 @@
         "id": "sv_546e802c61a157a850b0400d",
         "title": "Besök i Västerbotten",
         "participant": "Kronprinsessan",
-        "location": "Umeå samt Lagnäsets naturreservat",
+        "location": "Umeå",
+        "date": "2026-11-25"
+    },
+    {
+        "id": "sv_52698f7381a1c4980f1b49bba",
+        "title": "Besök i Västerbotten",
+        "participant": "Prins Daniel",
+        "location": "Umeå",
+        "date": "2026-11-26"
+    },
+    {
+        "id": "sv_52698f7381a1c4980f1b49bc9",
+        "title": "Besök i Västerbotten",
+        "participant": "Kronprinsessan",
+        "location": "Lagnäsets naturreservat",
         "date": "2026-11-26"
     },
     {
@@ -617,7 +526,7 @@
     },
     {
         "id": "sv_55d65c4971a1a18a16a11565c",
-        "title": "Närvaro vid Stockholms berättarcentrums föreläsning \"Barn i brottslighetens skugga\"",
+        "title": "Närvaro vid Stockholms Barnrättscentrums föreläsning ”Barns rättigheter och straffrättsliga dilemman”",
         "participant": "Drottningen",
         "location": "Aula Magna, Stockholms universitet",
         "date": "2026-12-03"
